@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Thermostat Control</title>
+	<style>
+	body {
+		background-image: url("sky.jpg");
+	}
+</style>
+</head>
+<body>
+	<div class="">Room Temperature: <span id="current-temp"></span></div>
+	<div class="">Target Temperature: <span id="target-temp"></span></div>
+	<div class="">Furnace: <span id="furnace-status"></span></div>
+	<br>
+	<div class="">
+		<div>Weather</div>
+		<div>Currently: <span id="weather-description"></span></div>
+		<div>High: <span id="weather-daily-high"></span></div>
+		<div>Low: <span id="weather-daily-low"></span></div>
+		<div>Current: <span id="weather-current-temperature"></span></div>
+		<div>Humidity: <span id="weather-humidity"></span></div>
+	</div>
+	<br>
+	<div>
+		<span>Enter desired room Temperature</span>
+		<input id="desired-temp" value="0" type="number">
+		<button onclick="updateTargetTemperature()">Update</button>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
